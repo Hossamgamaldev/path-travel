@@ -1,0 +1,526 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Start Nav */
+nav {
+    background-color: #201c1c;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    font-size: 15px;
+}
+
+nav div a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+nav span i {
+    color: #3ccdd0;
+    padding: 5px;
+}
+
+nav div a:hover {
+    color: #3ccdd0;
+    text-decoration: none
+}
+
+i:hover {
+    color: #3ccdd0;
+    cursor: pointer;
+}
+
+/* End Nav */
+/* Start header */
+header {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: white;
+}
+
+header div a {
+    color: black;
+    font-weight: 700;
+    font-style: bold;
+    padding: 40px;
+    font-size: 18px;
+}
+
+header div i {
+    font-size: 20px;
+    padding: 10px;
+}
+
+header p {
+    color: #fcbc3c;
+    margin-top: 10px;
+    font-size: 40px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+header a:hover {
+    color: #3ccdd0;
+    text-decoration: none;
+}
+
+/* End header */
+/* Start the first section */
+
+.sec1 {
+    background-image: url(../images/background.jpg);
+    height: 84vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.sec1::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .4;
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.sec1 pre {
+    font-family: 'Pacifico', cursive;
+    color: white;
+    font-size: 100px;
+    font-weight: 500;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 60px;
+}
+
+.sec1 div {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    margin-top: 400px;
+}
+
+.sec1 div input {
+    padding: 30px;
+    width: 300px;
+    height: 75px;
+    border: none;
+}
+
+.sec1 div input:focus {
+    outline: none;
+}
+
+.sec1 div .submit {
+
+    width: 200px;
+    background-color: #3ccdd0;
+    color: white;
+    font-size: 20px;
+    padding-top: 22px;
+}
+
+.sec1 div .submit:hover {
+
+
+    background-color: #1cb0b3;
+
+}
+
+.sec1 div i {
+    font-size: 20px;
+}
+
+.fa-compass {
+    position: absolute;
+    top: 29px;
+    left: 5px;
+}
+
+.fa-calendar {
+    position: absolute;
+    top: 29px;
+    left: 306px;
+}
+
+.fa-map-location-dot {
+    position: absolute;
+    top: 29px;
+    left: 604px;
+}
+
+/* End the first section */
+/* Start the Second section */
+.sec2 {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.sec2 div p:first-child {
+    font-size: 30px;
+    font-family: 'Pacifico', cursive;
+    color: #3ccdd0;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Trip-type {
+    margin: 0 10px 30px 0;
+    width: 23%;
+    box-shadow: 0 8px 20px 6px #ddd;
+
+}
+
+.Trip-type:hover  {
+    cursor: pointer;
+}
+.Trip-type:hover img {
+    cursor: pointer;
+    transform: scale(1.1) rotate(1deg);
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+.Trip-type img {
+    width: 100%;
+    height: 350px;
+    transition: 0.3s;
+}
+
+.Trip-type h3 {
+    font-size: 18px;
+    font-style: bold;
+    font-weight: 700;
+    margin-top: 40px;
+}
+
+.Trip-type span {
+    font-weight: 600;
+    margin-bottom: 5px !important;
+}
+
+/* End the Second section */
+/* Start the 3th section */
+
+.sec3 {
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sec3 h2 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.sec3 p {
+    width: 65%;
+    font-size: 18px;
+    margin: 20px 0 50px;
+}
+
+
+
+.col-md-4 img {
+    width: 100%;
+    height: 200px;
+
+}
+
+.sec3 .card {
+    height: 200px;
+    overflow: hidden;
+}
+
+.sec3 .card:hover img {
+    transform: scale(.9) ;
+}
+.card-title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.card-title:hover {
+    color: #3ccdd0;
+    cursor: pointer;
+}
+
+.card-text {
+    font-size: 17px !important;
+    width: 100% !important;
+    margin-bottom: 12px !important;
+}
+
+.card-body a {
+    text-decoration: none;
+    color: #595959;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.card-body a:hover {
+
+    color: #3ccdd0;
+}
+
+.new-img-1 {
+    margin: 80PX 150PX 0 0;
+}
+
+
+/* End the 3th section */
+/* Start the 4th section */
+.sec4 {
+    text-align: center;
+    margin-top: 120px;
+
+}
+
+.sec4 h2 {
+    font-size: 55px;
+    font-weight: 700;
+}
+
+.Reviews {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.sec4 .card {
+    height: 200px;
+    width: 28%;
+    box-shadow: 0 8px 20px 6px #ddd;
+}
+
+.sec4 .card img {
+    margin-top: 25px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.sec4 div p:first-child {
+    font-size: 30px;
+    font-family: 'Pacifico', cursive;
+    color: #3ccdd0;
+}
+
+.sec4 .card-text {
+    font-size: 10px;
+    margin-top: 30px;
+    width: 40%;
+
+}
+
+/* End the 4th section */
+/* Start the 5th section */
+
+.sec5 {
+    margin-top: 50px;
+    height: 100px;
+    background-color: #3ccdd0;
+    display: flex;
+    justify-content: center;
+}
+
+.Subscribe {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Subscribe h3 {
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.Subscribe button {
+    height: 50px;
+    width: 200px;
+    border: none;
+    font-weight: 600;
+}
+
+.Subscribe button:hover {
+    color: white;
+    background-color: #1cb0b3;
+}
+
+/* End the 5th section */
+/* Start the Footer */
+
+footer {
+    background-color: #212121;
+    height: 400px;
+}
+
+.div-footer {
+    width: 90%;
+    margin: auto;
+    padding: 50px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.div-left-footer p {
+    color: #fcbc3c;
+    font-size: 40px;
+    font-weight: 900;
+    cursor: pointer;
+    font-style: normal;
+}
+
+.left-cl-footer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+footer div a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+footer span i {
+    color: #3ccdd0;
+    padding: 5px;
+}
+
+footer div a:hover {
+    color: #3ccdd0;
+    text-decoration: none
+}
+
+footer h3 {
+    color: white;
+    text-align: center;
+    font-size: 23px;
+    margin-bottom: 15px;
+
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+footer form input {
+    padding-left: 40px;
+    height: 50px;
+    width: 300px;
+    margin-top: 5px;
+    outline: none;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #595959;
+    color: white;
+}
+
+footer form input::placeholder {
+
+    color: white;
+}
+
+footer form input[type=submit] {
+    padding-left: 0px;
+    background-color: #3ccdd0;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+footer form input[type=submit]:hover {
+    background-color: white;
+    color: black;
+}
+
+footer form i {
+    color: white;
+}
+
+.fa-person {
+    position: absolute;
+    top: 22px;
+    left: 15px;
+}
+
+footer form .fa-envelope {
+    position: absolute;
+    top: 78px;
+    left: 14px;
+}
+
+.div-right-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.social {
+    margin-top: 30px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+
+}
+
+.the-year {
+    color: grey;
+}
+
+.developer-name {
+    color: white;
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+.developer-name:hover {
+    color: #3ccdd0;
+    cursor: pointer;
+}
+
+/* End the Footer */
